@@ -1,0 +1,11 @@
+.Card {
+  border-radius: 10px;
+  border-color: black;
+  border-style: solid;
+  margin: auto;
+  padding: 5px;
+  max-width: 275px;
+  min-height: 550px;
+  max-height: 550px;
+  overflow-y: auto;
+}
