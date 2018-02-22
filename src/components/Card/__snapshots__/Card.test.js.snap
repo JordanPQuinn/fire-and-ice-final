@@ -56,6 +56,10 @@ ShallowWrapper {
            Coat of Arms: 
            
 </p>,
+        <p>
+           
+           
+</p>,
         false,
       ],
       "className": "Card",
@@ -211,6 +215,25 @@ ShallowWrapper {
         ],
         "type": "p",
       },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            " ",
+            undefined,
+            " ",
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          " ",
+          undefined,
+          " ",
+        ],
+        "type": "p",
+      },
       false,
     ],
     "type": "div",
@@ -251,6 +274,10 @@ ShallowWrapper {
 </div>,
           <p>
              Coat of Arms: 
+             
+</p>,
+          <p>
+             
              
 </p>,
           false,
@@ -403,6 +430,25 @@ ShallowWrapper {
           "ref": null,
           "rendered": Array [
             " Coat of Arms: ",
+            undefined,
+            " ",
+          ],
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              " ",
+              undefined,
+              " ",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            " ",
             undefined,
             " ",
           ],

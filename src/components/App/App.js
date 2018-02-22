@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import PropTypes, { shape, func, string } from 'prop-types';
+import { func } from 'prop-types';
 import logo from './logo.svg';
 import wolf from './wolf.gif';
 import './App.css';
