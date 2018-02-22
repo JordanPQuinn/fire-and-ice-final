@@ -14,7 +14,8 @@ export class Card extends Component {
   }
 
   changeClickState = () => {
-    this.props.handleClick(this.props.swornMembers);
+    const { name, swornMembers, handleClick } = this.props;
+    handleClick(name, swornMembers);
     const { clicked } = this.state
     this.setState({
       clicked: !clicked
@@ -64,9 +65,3 @@ Card.propTypes = {
     swornMembers: PropTypes.array
   })
 };
-
-export const mapStateToProps = state => ({
-  members: state.members
-});
-
-export default connect(mapStateToProps, null)(Card);

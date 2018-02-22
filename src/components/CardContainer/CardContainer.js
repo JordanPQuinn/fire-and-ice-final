@@ -1,20 +1,24 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import Card from '../Card/Card';
+import { Card } from '../Card/Card';
 import PropTypes from 'prop-types';
 import { getSwornMembers } from '../../Utilities/api-helper';
 import { storeSwornMembers } from '../../actions/index';
 
-
 export class CardContainer extends Component {
-  handleChildClick = async (swornMembers) => {
-    const members = await getSwornMembers(swornMembers)
-    this.props.storeSwornMembers(members);
+  handleChildClick = async (name, swornMembers) => {
+    const fetchedMembers = await getSwornMembers(swornMembers)
+    const membersToStore = {[name] : [fetchedMembers]}
+    this.props.storeSwornMembers(membersToStore);
   }
 
   createCards = ({houses}) => {
     return houses.map( (house, i) => {
-      return <Card {...house} key={house + i} parentClick={this.handleChildClick} /> 
+      return <Card {...house} 
+        key={house + i} 
+        handleClick={this.handleChildClick}
+        members={this.props.members} 
+      /> 
     })
   }
 
@@ -45,8 +49,9 @@ export const mapDispatchToProps = dispatch => ({
   storeSwornMembers: members => dispatch(storeSwornMembers(members))
 });
 
-export const mapStateToProps = ({houses}) => ({
-  houses
+export const mapStateToProps = ({houses, members}) => ({
+  houses,
+  members
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(CardContainer)
