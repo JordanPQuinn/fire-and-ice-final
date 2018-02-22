@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
 import './Card.css';
-import PropTypes, { shape, func, string } from 'prop-types';
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { getSwornMembers } from '../../Utilities/api-helper';
 import { storeSwornMembers } from '../../actions/index';
-
 
 export class Card extends Component {
   constructor(props) {
@@ -24,7 +23,7 @@ export class Card extends Component {
   }
 
   displayMembers = (members) => {
-    return members.map( member => <p> {member.name}: {member.died} </p> )
+    return members.map( member => <p key={member.name + member.died}> {member.name}: {member.died} </p> )
   }
 
   render() {
@@ -35,7 +34,7 @@ export class Card extends Component {
 
     const titlesLines = titles.map ( title => {
       return <p key={title}> Titles: {title} </p>
-    })
+    });
 
     return(
       <div className='Card' onClick={this.handleClick}>
@@ -47,6 +46,7 @@ export class Card extends Component {
           { titlesLines }
         </div>
         <p> Coat of Arms: {coatOfArms} </p>
+        <p> {ancestralWeapons} </p>
         { this.state.clicked && this.displayMembers(this.props.members) }
       </div>
     )
