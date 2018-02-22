@@ -279,7 +279,7 @@ ShallowWrapper {
         <div
           className="Display-info"
 >
-          <Connect(Component) />
+          <Connect(CardContainer) />
 </div>,
       ],
       "className": "App",
@@ -337,7 +337,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": <Connect(Component) />,
+          "children": <Connect(CardContainer) />,
           "className": "Display-info",
         },
         "ref": null,
@@ -377,7 +377,7 @@ ShallowWrapper {
           <div
             className="Display-info"
 >
-            <Connect(Component) />
+            <Connect(CardContainer) />
 </div>,
         ],
         "className": "App",
@@ -435,7 +435,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": <Connect(Component) />,
+            "children": <Connect(CardContainer) />,
             "className": "Display-info",
           },
           "ref": null,

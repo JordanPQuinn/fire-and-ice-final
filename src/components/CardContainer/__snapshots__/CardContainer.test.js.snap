@@ -4,7 +4,7 @@ exports[`CardContainer Component should exist 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Unknown
+  Symbol(enzyme.__unrendered__): <CardContainer
     houses={
         Array [
             Object {
@@ -72,6 +72,7 @@ ShallowWrapper {
           heir="https://www.anapioficeandfire.com/api/characters/677"
           name="House Corbray of Heart's Home"
           overlord="https://www.anapioficeandfire.com/api/houses/7"
+          parentClick={[Function]}
           region=""
           seats={
                     Array [
@@ -121,6 +122,7 @@ ShallowWrapper {
           "heir": "https://www.anapioficeandfire.com/api/characters/677",
           "name": "House Corbray of Heart's Home",
           "overlord": "https://www.anapioficeandfire.com/api/houses/7",
+          "parentClick": [Function],
           "region": "",
           "seats": Array [
             "Heart's Home",
@@ -171,6 +173,7 @@ ShallowWrapper {
             heir="https://www.anapioficeandfire.com/api/characters/677"
             name="House Corbray of Heart's Home"
             overlord="https://www.anapioficeandfire.com/api/houses/7"
+            parentClick={[Function]}
             region=""
             seats={
                         Array [
@@ -220,6 +223,7 @@ ShallowWrapper {
             "heir": "https://www.anapioficeandfire.com/api/characters/677",
             "name": "House Corbray of Heart's Home",
             "overlord": "https://www.anapioficeandfire.com/api/houses/7",
+            "parentClick": [Function],
             "region": "",
             "seats": Array [
               "Heart's Home",

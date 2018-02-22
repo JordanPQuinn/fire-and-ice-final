@@ -1,24 +1,31 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import Card from '../Card/Card';
 import PropTypes from 'prop-types';
+import { getSwornMembers } from '../../Utilities/api-helper';
+import { storeSwornMembers } from '../../actions/index';
 
 
-export const CardContainer = ({houses}) => {
-  const cards = houses.map( (house, i) => {
-    return <Card {...house} key={house + i} />
-  })
+export class CardContainer extends Component {
+  handleChildClick = async (swornMembers) => {
+    const members = await getSwornMembers(swornMembers)
+    this.props.storeSwornMembers(members);
+  }
 
-  return(
+  createCards = ({houses}) => {
+    return houses.map( (house, i) => {
+      return <Card {...house} key={house + i} parentClick={this.handleChildClick} /> 
+    })
+  }
+
+  render() {
+    return(
     <div className='Container'>
-      {cards}
+      {this.createCards(this.props)}
     </div>
-  )
+    )
+  }
 }
-
-export const mapStateToProps = ({houses}) => ({
-  houses
-})
 
 CardContainer.propTypes = {
   houses: PropTypes.arrayOf(
@@ -31,7 +38,15 @@ CardContainer.propTypes = {
       ancestralWeapons: PropTypes.array,
       swornMembers: PropTypes.array
     })
-  ),
+  )
 }
 
-export default connect(mapStateToProps, null)(CardContainer)
+export const mapDispatchToProps = dispatch => ({
+  storeSwornMembers: members => dispatch(storeSwornMembers(members))
+});
+
+export const mapStateToProps = ({houses}) => ({
+  houses
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(CardContainer)

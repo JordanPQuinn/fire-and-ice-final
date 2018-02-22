@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 import './Card.css';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { getSwornMembers } from '../../Utilities/api-helper';
-import { storeSwornMembers } from '../../actions/index';
+
 
 export class Card extends Component {
   constructor(props) {
@@ -14,13 +13,12 @@ export class Card extends Component {
     }
   }
 
-  handleClick = async () => {
+  changeClickState = () => {
+    this.props.handleClick(this.props.swornMembers);
     const { clicked } = this.state
     this.setState({
       clicked: !clicked
     })
-    const members = await getSwornMembers(this.props.swornMembers)
-    this.props.storeSwornMembers(members);
   }
 
   displayMembers = (members) => {
@@ -40,7 +38,7 @@ export class Card extends Component {
     });
 
     return(
-      <div className='Card' onClick={this.handleClick}>
+      <div className='Card' onClick={this.changeClickState}>
         <h1> {name} </h1>
         {this.foundedDisplay(founded)}
         <h2> {words} </h2>
@@ -67,12 +65,8 @@ Card.propTypes = {
   })
 };
 
-export const mapDispatchToProps = dispatch => ({
-  storeSwornMembers: members => dispatch(storeSwornMembers(members))
-});
-
 export const mapStateToProps = state => ({
   members: state.members
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(Card);
+export default connect(mapStateToProps, null)(Card);
