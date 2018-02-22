@@ -75,7 +75,7 @@ describe('api helper', () => {
   });
 
   describe('cleanMemberData', () => {
-    it('should be return a cleand member object', () => {
+    it('should be return a cleaned member object', () => {
       const mockMember = [{thing: 'dont need this', or:'this', name:'need this tho', died:'and this'}];
       const cleanedMember = cleanMemberData(mockMember);
       const expectedMember = [{name:'need this tho', died:'and this'}]
