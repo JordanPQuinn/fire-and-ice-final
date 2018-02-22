@@ -3,17 +3,18 @@ import PropTypes, { shape, func, string } from 'prop-types';
 import logo from './logo.svg';
 import wolf from './wolf.gif';
 import './App.css';
+import CardContainer from '../CardContainer/CardContainer';
 import { fetchApi } from '../../Utilities/api-helper'
 import { connect } from 'react-redux';
 import { storeHouses } from '../../actions';
-class App extends Component {
+
+export class App extends Component {
   constructor(props) {
     super(props)
 
     this.state = {
       loaded: false
     }
-
   }
 
   async componentDidMount() {
@@ -23,7 +24,15 @@ class App extends Component {
       this.setState({
       loaded: true
     })
-    }, 2000)
+    }, 1000)
+  }
+
+  displayDecision = ({loaded}) => {
+    const display = 
+      !loaded ? 
+        <img src={wolf} id='wolf' alt='loading-gif' /> :
+        <CardContainer />
+    return display
   }
 
   render() {
@@ -33,27 +42,21 @@ class App extends Component {
           <img src={logo} className='App-logo' alt='logo' />
           <h2>Welcome to Westeros</h2>
         </div>
-        { !this.state.loaded && 
-          <img src={wolf} id='wolf' alt='loading-gif' />
-        }
         <div className='Display-info'>
+          { this.displayDecision(this.state) }
         </div>
       </div>
     );
   }
 }
 
-// App.propTypes = {
-//   fake: shape({ fake: string }),
-//   fakeAction: func.isRequired
-// };
+App.propTypes = {
+  storeHouses: func.isRequired
+};
 
-const mapStateToProps = ({houses}) => ({
-  houses
-});
 
-const mapDispatchToProps = dispatch => ({ 
+export const mapDispatchToProps = dispatch => ({ 
   storeHouses: houses => dispatch(storeHouses(houses))
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(App);
+export default connect(null, mapDispatchToProps)(App);

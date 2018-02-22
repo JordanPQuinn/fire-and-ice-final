@@ -57,7 +57,7 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <Unknown
+        <Connect(Card)
           ancestralWeapons={
                     Array [
                               "Lady Forlorn",
@@ -107,7 +107,7 @@ ShallowWrapper {
       Object {
         "instance": null,
         "key": "[object Object]0",
-        "nodeType": "function",
+        "nodeType": "class",
         "props": Object {
           "ancestralWeapons": Array [
             "Lady Forlorn",
@@ -156,7 +156,7 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <Unknown
+          <Connect(Card)
             ancestralWeapons={
                         Array [
                                     "Lady Forlorn",
@@ -206,7 +206,7 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": "[object Object]0",
-          "nodeType": "function",
+          "nodeType": "class",
           "props": Object {
             "ancestralWeapons": Array [
               "Lady Forlorn",
