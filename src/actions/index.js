@@ -3,7 +3,8 @@ export const storeHouses = houses => ({
   houses
 });
 
-export const storeSwornMembers = members => ({
+export const storeSwornMembers = (name, members) => ({
   type: 'STORE_MEMBERS',
-  members
+  members,
+  name
 })

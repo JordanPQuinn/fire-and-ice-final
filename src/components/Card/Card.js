@@ -20,10 +20,11 @@ export class Card extends Component {
       clicked: !clicked
     })
     const members = await getSwornMembers(this.props.swornMembers)
-    this.props.storeSwornMembers(members);
+    this.props.storeSwornMembers(this.props.name, members);
   }
 
   displayMembers = (members) => {
+    this.findMembers(this.props.members)
     return members.map( member => <p key={member.name + member.died}> {member.name}: {member.died} </p> )
   }
 
@@ -68,7 +69,7 @@ Card.propTypes = {
 };
 
 export const mapDispatchToProps = dispatch => ({
-  storeSwornMembers: members => dispatch(storeSwornMembers(members))
+  storeSwornMembers: (name, members) => dispatch(storeSwornMembers(name, members))
 });
 
 export const mapStateToProps = state => ({
