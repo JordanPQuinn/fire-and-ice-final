@@ -3,8 +3,8 @@ import { connect } from 'react-redux';
 import { Card } from '../Card/Card';
 
 export const CardContainer = ({houses}) => {
-  const cards = houses.map( house => {
-    return <Card {...house} />
+  const cards = houses.map( (house, i) => {
+    return <Card {...house} key={house + i} />
   })
 
   return(
