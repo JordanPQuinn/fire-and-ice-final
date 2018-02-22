@@ -4,12 +4,12 @@ import logo from './logo.svg';
 import './App.css';
 import { fetchApi } from '../../Utilities/api-helper'
 import { connect } from 'react-redux';
-import { fakeAction } from '../../actions';
+import { storeHouses } from '../../actions';
 class App extends Component {
 
   async componentDidMount() {
-    const data = await fetchApi('http://localhost:3001/api/v1/houses')
-    console.log(data)
+    const houseData = await fetchApi('http://localhost:3001/api/v1/houses')
+    this.props.storeHouses(houseData)
   }
 
   render() {
@@ -18,10 +18,6 @@ class App extends Component {
         <div className='App-header'>
           <img src={logo} className='App-logo' alt='logo' />
           <h2>Welcome to Westeros</h2>
-          <button onClick={() => {
-            this.props.fakeAction();
-            alert(this.props.fake);
-          }}> FAKE ACTION</button>
         </div>
         <div className='Display-info'>
         </div>
@@ -35,9 +31,12 @@ class App extends Component {
 //   fakeAction: func.isRequired
 // };
 
-const mapStateToProps = ({ fake }) => ({ fake });
-const mapDispatchToProps = dispatch => ({ fakeAction:
-  () => dispatch(fakeAction())
+const mapStateToProps = ({houses}) => ({
+  houses
+});
+
+const mapDispatchToProps = dispatch => ({ 
+  storeHouses: houses => dispatch(storeHouses(houses))
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(App);
