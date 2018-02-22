@@ -1,0 +1,260 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CardContainer Component should exist 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Unknown
+    houses={
+        Array [
+            Object {
+              "ancestralWeapons": Array [
+                "Lady Forlorn",
+              ],
+              "cadetBranches": Array [],
+              "coatOfArms": "Three black ravens in flight, holding three red hearts, on a white field(Argent, three ravens volant sable, each clutching in their claws a heart gules)",
+              "currentLord": "https://www.anapioficeandfire.com/api/characters/681",
+              "diedOut": "",
+              "founded": "",
+              "founder": "https://www.anapioficeandfire.com/api/characters/256",
+              "heir": "https://www.anapioficeandfire.com/api/characters/677",
+              "name": "House Corbray of Heart's Home",
+              "overlord": "https://www.anapioficeandfire.com/api/houses/7",
+              "region": "",
+              "seats": Array [
+                "Heart's Home",
+              ],
+              "swornMembers": Array [
+                "https://www.anapioficeandfire.com/api/characters/255",
+                "https://www.anapioficeandfire.com/api/characters/256",
+                "https://www.anapioficeandfire.com/api/characters/447",
+                "https://www.anapioficeandfire.com/api/characters/654",
+                "https://www.anapioficeandfire.com/api/characters/677",
+                "https://www.anapioficeandfire.com/api/characters/681",
+                "https://www.anapioficeandfire.com/api/characters/871",
+                "https://www.anapioficeandfire.com/api/characters/1182",
+              ],
+              "titles": Array [
+                "Lord of Heart's Home",
+                "King of the Fingers (historical)",
+              ],
+              "url": "https://www.anapioficeandfire.com/api/houses/81",
+              "words": "",
+            },
+          ]
+    }
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <Unknown
+          ancestralWeapons={
+                    Array [
+                              "Lady Forlorn",
+                            ]
+          }
+          cadetBranches={Array []}
+          coatOfArms="Three black ravens in flight, holding three red hearts, on a white field(Argent, three ravens volant sable, each clutching in their claws a heart gules)"
+          currentLord="https://www.anapioficeandfire.com/api/characters/681"
+          diedOut=""
+          founded=""
+          founder="https://www.anapioficeandfire.com/api/characters/256"
+          heir="https://www.anapioficeandfire.com/api/characters/677"
+          name="House Corbray of Heart's Home"
+          overlord="https://www.anapioficeandfire.com/api/houses/7"
+          region=""
+          seats={
+                    Array [
+                              "Heart's Home",
+                            ]
+          }
+          swornMembers={
+                    Array [
+                              "https://www.anapioficeandfire.com/api/characters/255",
+                              "https://www.anapioficeandfire.com/api/characters/256",
+                              "https://www.anapioficeandfire.com/api/characters/447",
+                              "https://www.anapioficeandfire.com/api/characters/654",
+                              "https://www.anapioficeandfire.com/api/characters/677",
+                              "https://www.anapioficeandfire.com/api/characters/681",
+                              "https://www.anapioficeandfire.com/api/characters/871",
+                              "https://www.anapioficeandfire.com/api/characters/1182",
+                            ]
+          }
+          titles={
+                    Array [
+                              "Lord of Heart's Home",
+                              "King of the Fingers (historical)",
+                            ]
+          }
+          url="https://www.anapioficeandfire.com/api/houses/81"
+          words=""
+/>,
+      ],
+      "className": "Container",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": "[object Object]0",
+        "nodeType": "function",
+        "props": Object {
+          "ancestralWeapons": Array [
+            "Lady Forlorn",
+          ],
+          "cadetBranches": Array [],
+          "coatOfArms": "Three black ravens in flight, holding three red hearts, on a white field(Argent, three ravens volant sable, each clutching in their claws a heart gules)",
+          "currentLord": "https://www.anapioficeandfire.com/api/characters/681",
+          "diedOut": "",
+          "founded": "",
+          "founder": "https://www.anapioficeandfire.com/api/characters/256",
+          "heir": "https://www.anapioficeandfire.com/api/characters/677",
+          "name": "House Corbray of Heart's Home",
+          "overlord": "https://www.anapioficeandfire.com/api/houses/7",
+          "region": "",
+          "seats": Array [
+            "Heart's Home",
+          ],
+          "swornMembers": Array [
+            "https://www.anapioficeandfire.com/api/characters/255",
+            "https://www.anapioficeandfire.com/api/characters/256",
+            "https://www.anapioficeandfire.com/api/characters/447",
+            "https://www.anapioficeandfire.com/api/characters/654",
+            "https://www.anapioficeandfire.com/api/characters/677",
+            "https://www.anapioficeandfire.com/api/characters/681",
+            "https://www.anapioficeandfire.com/api/characters/871",
+            "https://www.anapioficeandfire.com/api/characters/1182",
+          ],
+          "titles": Array [
+            "Lord of Heart's Home",
+            "King of the Fingers (historical)",
+          ],
+          "url": "https://www.anapioficeandfire.com/api/houses/81",
+          "words": "",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <Unknown
+            ancestralWeapons={
+                        Array [
+                                    "Lady Forlorn",
+                                  ]
+            }
+            cadetBranches={Array []}
+            coatOfArms="Three black ravens in flight, holding three red hearts, on a white field(Argent, three ravens volant sable, each clutching in their claws a heart gules)"
+            currentLord="https://www.anapioficeandfire.com/api/characters/681"
+            diedOut=""
+            founded=""
+            founder="https://www.anapioficeandfire.com/api/characters/256"
+            heir="https://www.anapioficeandfire.com/api/characters/677"
+            name="House Corbray of Heart's Home"
+            overlord="https://www.anapioficeandfire.com/api/houses/7"
+            region=""
+            seats={
+                        Array [
+                                    "Heart's Home",
+                                  ]
+            }
+            swornMembers={
+                        Array [
+                                    "https://www.anapioficeandfire.com/api/characters/255",
+                                    "https://www.anapioficeandfire.com/api/characters/256",
+                                    "https://www.anapioficeandfire.com/api/characters/447",
+                                    "https://www.anapioficeandfire.com/api/characters/654",
+                                    "https://www.anapioficeandfire.com/api/characters/677",
+                                    "https://www.anapioficeandfire.com/api/characters/681",
+                                    "https://www.anapioficeandfire.com/api/characters/871",
+                                    "https://www.anapioficeandfire.com/api/characters/1182",
+                                  ]
+            }
+            titles={
+                        Array [
+                                    "Lord of Heart's Home",
+                                    "King of the Fingers (historical)",
+                                  ]
+            }
+            url="https://www.anapioficeandfire.com/api/houses/81"
+            words=""
+/>,
+        ],
+        "className": "Container",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": "[object Object]0",
+          "nodeType": "function",
+          "props": Object {
+            "ancestralWeapons": Array [
+              "Lady Forlorn",
+            ],
+            "cadetBranches": Array [],
+            "coatOfArms": "Three black ravens in flight, holding three red hearts, on a white field(Argent, three ravens volant sable, each clutching in their claws a heart gules)",
+            "currentLord": "https://www.anapioficeandfire.com/api/characters/681",
+            "diedOut": "",
+            "founded": "",
+            "founder": "https://www.anapioficeandfire.com/api/characters/256",
+            "heir": "https://www.anapioficeandfire.com/api/characters/677",
+            "name": "House Corbray of Heart's Home",
+            "overlord": "https://www.anapioficeandfire.com/api/houses/7",
+            "region": "",
+            "seats": Array [
+              "Heart's Home",
+            ],
+            "swornMembers": Array [
+              "https://www.anapioficeandfire.com/api/characters/255",
+              "https://www.anapioficeandfire.com/api/characters/256",
+              "https://www.anapioficeandfire.com/api/characters/447",
+              "https://www.anapioficeandfire.com/api/characters/654",
+              "https://www.anapioficeandfire.com/api/characters/677",
+              "https://www.anapioficeandfire.com/api/characters/681",
+              "https://www.anapioficeandfire.com/api/characters/871",
+              "https://www.anapioficeandfire.com/api/characters/1182",
+            ],
+            "titles": Array [
+              "Lord of Heart's Home",
+              "King of the Fingers (historical)",
+            ],
+            "url": "https://www.anapioficeandfire.com/api/houses/81",
+            "words": "",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
