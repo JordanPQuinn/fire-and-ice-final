@@ -2,9 +2,15 @@ import React, { Component } from 'react';
 import PropTypes, { shape, func, string } from 'prop-types';
 import logo from './logo.svg';
 import './App.css';
+import { fetchApi } from '../../Utilities/api-helper'
 import { connect } from 'react-redux';
 import { fakeAction } from '../../actions';
 class App extends Component {
+
+  async componentDidMount() {
+    const data = await fetchApi('http://localhost:3001/api/v1/houses')
+    console.log(data)
+  }
 
   render() {
     return (
@@ -24,13 +30,14 @@ class App extends Component {
   }
 }
 
-App.propTypes = {
-  fake: shape({ fake: string }),
-  fakeAction: func.isRequired
-};
+// App.propTypes = {
+//   fake: shape({ fake: string }),
+//   fakeAction: func.isRequired
+// };
 
 const mapStateToProps = ({ fake }) => ({ fake });
 const mapDispatchToProps = dispatch => ({ fakeAction:
   () => dispatch(fakeAction())
 });
+
 export default connect(mapStateToProps, mapDispatchToProps)(App);
