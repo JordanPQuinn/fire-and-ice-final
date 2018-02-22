@@ -53,4 +53,14 @@ describe('Card Component', () => {
     
     expect(members).toEqual(expectedMembers)
   });
+
+  it('if there are swornMembers in props, it should return a number of p tags equal to the length of that array', () => {
+     const wrapper = shallow(
+      <Card 
+        titles={mockData.houses[0].titles} 
+        members={mockData.houses[0].swornMembers}
+        storeSwornMembers={jest.fn()} 
+      />)
+     expect(wrapper.props('members').children.length).toEqual(8);
+  })
 });

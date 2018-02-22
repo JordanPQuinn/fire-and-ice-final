@@ -8,6 +8,7 @@ import { storeSwornMembers } from '../../actions/index';
 export class Card extends Component {
   constructor(props) {
     super(props)
+
     this.state = {
       clicked: false
     }
@@ -26,12 +27,14 @@ export class Card extends Component {
     return members.map( member => <p key={member.name + member.died}> {member.name}: {member.died} </p> )
   }
 
+  foundedDisplay = (founded) => {
+    return !founded ? 
+      <h2> Founded: N/A </h2> :
+      <h2> Founded: { founded } </h2>
+  }
+
   render() {
     const {name, founded, seats, titles, coatOfArms, ancestralWeapons, words} = this.props;
-    const foundedDisplay = !founded ? 
-    <h2> Founded: N/A </h2> :
-    <h2> Founded: { founded } </h2>
-
     const titlesLines = titles.map ( title => {
       return <p key={title}> Titles: {title} </p>
     });
@@ -39,11 +42,11 @@ export class Card extends Component {
     return(
       <div className='Card' onClick={this.handleClick}>
         <h1> {name} </h1>
-        {foundedDisplay}
+        {this.foundedDisplay(founded)}
         <h2> {words} </h2>
         <p> Seats: {seats} </p>
         <div>
-          { titlesLines }
+          {titlesLines}
         </div>
         <p> Coat of Arms: {coatOfArms} </p>
         <p> {ancestralWeapons} </p>
@@ -62,14 +65,14 @@ Card.propTypes = {
     ancestralWeapons: PropTypes.array,
     swornMembers: PropTypes.array
   })
-}
+};
 
 export const mapDispatchToProps = dispatch => ({
   storeSwornMembers: members => dispatch(storeSwornMembers(members))
-})
+});
 
 export const mapStateToProps = state => ({
   members: state.members
-})
+});
 
 export default connect(mapStateToProps, mapDispatchToProps)(Card);
