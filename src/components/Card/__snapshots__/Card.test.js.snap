@@ -468,3 +468,933 @@ ShallowWrapper {
   },
 }
 `;
+
+exports[`Card Component should map the snapshot if the card is clicked 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Card
+    members={
+        Array [
+            "https://www.anapioficeandfire.com/api/characters/255",
+            "https://www.anapioficeandfire.com/api/characters/256",
+            "https://www.anapioficeandfire.com/api/characters/447",
+            "https://www.anapioficeandfire.com/api/characters/654",
+            "https://www.anapioficeandfire.com/api/characters/677",
+            "https://www.anapioficeandfire.com/api/characters/681",
+            "https://www.anapioficeandfire.com/api/characters/871",
+            "https://www.anapioficeandfire.com/api/characters/1182",
+          ]
+    }
+    storeSwornMembers={[Function]}
+    titles={
+        Array [
+            "Lord of Heart's Home",
+            "King of the Fingers (historical)",
+          ]
+    }
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <h1>
+           
+           
+</h1>,
+        <h2>
+           Founded: N/A 
+</h2>,
+        <h2>
+           
+           
+</h2>,
+        <p>
+           Seats: 
+           
+</p>,
+        <div>
+          <p>
+                     Titles: 
+                    Lord of Heart's Home
+                     
+          </p>
+          <p>
+                     Titles: 
+                    King of the Fingers (historical)
+                     
+          </p>
+</div>,
+        <p>
+           Coat of Arms: 
+           
+</p>,
+        <p>
+           
+           
+</p>,
+        Array [
+          <p>
+             
+            : 
+             
+</p>,
+          <p>
+             
+            : 
+             
+</p>,
+          <p>
+             
+            : 
+             
+</p>,
+          <p>
+             
+            : 
+             
+</p>,
+          <p>
+             
+            : 
+             
+</p>,
+          <p>
+             
+            : 
+             
+</p>,
+          <p>
+             
+            : 
+             
+</p>,
+          <p>
+             
+            : 
+             
+</p>,
+        ],
+      ],
+      "className": "Card",
+      "onClick": [Function],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            " ",
+            undefined,
+            " ",
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          " ",
+          undefined,
+          " ",
+        ],
+        "type": "h1",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": " Founded: N/A ",
+        },
+        "ref": null,
+        "rendered": " Founded: N/A ",
+        "type": "h2",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            " ",
+            undefined,
+            " ",
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          " ",
+          undefined,
+          " ",
+        ],
+        "type": "h2",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            " Seats: ",
+            undefined,
+            " ",
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          " Seats: ",
+          undefined,
+          " ",
+        ],
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <p>
+               Titles: 
+              Lord of Heart's Home
+               
+</p>,
+            <p>
+               Titles: 
+              King of the Fingers (historical)
+               
+</p>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": "Lord of Heart's Home",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                " Titles: ",
+                "Lord of Heart's Home",
+                " ",
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              " Titles: ",
+              "Lord of Heart's Home",
+              " ",
+            ],
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": "King of the Fingers (historical)",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                " Titles: ",
+                "King of the Fingers (historical)",
+                " ",
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              " Titles: ",
+              "King of the Fingers (historical)",
+              " ",
+            ],
+            "type": "p",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            " Coat of Arms: ",
+            undefined,
+            " ",
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          " Coat of Arms: ",
+          undefined,
+          " ",
+        ],
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            " ",
+            undefined,
+            " ",
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          " ",
+          undefined,
+          " ",
+        ],
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": "NaN",
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            " ",
+            undefined,
+            ": ",
+            undefined,
+            " ",
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          " ",
+          undefined,
+          ": ",
+          undefined,
+          " ",
+        ],
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": "NaN",
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            " ",
+            undefined,
+            ": ",
+            undefined,
+            " ",
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          " ",
+          undefined,
+          ": ",
+          undefined,
+          " ",
+        ],
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": "NaN",
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            " ",
+            undefined,
+            ": ",
+            undefined,
+            " ",
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          " ",
+          undefined,
+          ": ",
+          undefined,
+          " ",
+        ],
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": "NaN",
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            " ",
+            undefined,
+            ": ",
+            undefined,
+            " ",
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          " ",
+          undefined,
+          ": ",
+          undefined,
+          " ",
+        ],
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": "NaN",
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            " ",
+            undefined,
+            ": ",
+            undefined,
+            " ",
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          " ",
+          undefined,
+          ": ",
+          undefined,
+          " ",
+        ],
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": "NaN",
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            " ",
+            undefined,
+            ": ",
+            undefined,
+            " ",
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          " ",
+          undefined,
+          ": ",
+          undefined,
+          " ",
+        ],
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": "NaN",
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            " ",
+            undefined,
+            ": ",
+            undefined,
+            " ",
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          " ",
+          undefined,
+          ": ",
+          undefined,
+          " ",
+        ],
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": "NaN",
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            " ",
+            undefined,
+            ": ",
+            undefined,
+            " ",
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          " ",
+          undefined,
+          ": ",
+          undefined,
+          " ",
+        ],
+        "type": "p",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h1>
+             
+             
+</h1>,
+          <h2>
+             Founded: N/A 
+</h2>,
+          <h2>
+             
+             
+</h2>,
+          <p>
+             Seats: 
+             
+</p>,
+          <div>
+            <p>
+                         Titles: 
+                        Lord of Heart's Home
+                         
+            </p>
+            <p>
+                         Titles: 
+                        King of the Fingers (historical)
+                         
+            </p>
+</div>,
+          <p>
+             Coat of Arms: 
+             
+</p>,
+          <p>
+             
+             
+</p>,
+          Array [
+            <p>
+               
+              : 
+               
+</p>,
+            <p>
+               
+              : 
+               
+</p>,
+            <p>
+               
+              : 
+               
+</p>,
+            <p>
+               
+              : 
+               
+</p>,
+            <p>
+               
+              : 
+               
+</p>,
+            <p>
+               
+              : 
+               
+</p>,
+            <p>
+               
+              : 
+               
+</p>,
+            <p>
+               
+              : 
+               
+</p>,
+          ],
+        ],
+        "className": "Card",
+        "onClick": [Function],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              " ",
+              undefined,
+              " ",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            " ",
+            undefined,
+            " ",
+          ],
+          "type": "h1",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": " Founded: N/A ",
+          },
+          "ref": null,
+          "rendered": " Founded: N/A ",
+          "type": "h2",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              " ",
+              undefined,
+              " ",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            " ",
+            undefined,
+            " ",
+          ],
+          "type": "h2",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              " Seats: ",
+              undefined,
+              " ",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            " Seats: ",
+            undefined,
+            " ",
+          ],
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <p>
+                 Titles: 
+                Lord of Heart's Home
+                 
+</p>,
+              <p>
+                 Titles: 
+                King of the Fingers (historical)
+                 
+</p>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": "Lord of Heart's Home",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  " Titles: ",
+                  "Lord of Heart's Home",
+                  " ",
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                " Titles: ",
+                "Lord of Heart's Home",
+                " ",
+              ],
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": "King of the Fingers (historical)",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  " Titles: ",
+                  "King of the Fingers (historical)",
+                  " ",
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                " Titles: ",
+                "King of the Fingers (historical)",
+                " ",
+              ],
+              "type": "p",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              " Coat of Arms: ",
+              undefined,
+              " ",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            " Coat of Arms: ",
+            undefined,
+            " ",
+          ],
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              " ",
+              undefined,
+              " ",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            " ",
+            undefined,
+            " ",
+          ],
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": "NaN",
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              " ",
+              undefined,
+              ": ",
+              undefined,
+              " ",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            " ",
+            undefined,
+            ": ",
+            undefined,
+            " ",
+          ],
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": "NaN",
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              " ",
+              undefined,
+              ": ",
+              undefined,
+              " ",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            " ",
+            undefined,
+            ": ",
+            undefined,
+            " ",
+          ],
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": "NaN",
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              " ",
+              undefined,
+              ": ",
+              undefined,
+              " ",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            " ",
+            undefined,
+            ": ",
+            undefined,
+            " ",
+          ],
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": "NaN",
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              " ",
+              undefined,
+              ": ",
+              undefined,
+              " ",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            " ",
+            undefined,
+            ": ",
+            undefined,
+            " ",
+          ],
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": "NaN",
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              " ",
+              undefined,
+              ": ",
+              undefined,
+              " ",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            " ",
+            undefined,
+            ": ",
+            undefined,
+            " ",
+          ],
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": "NaN",
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              " ",
+              undefined,
+              ": ",
+              undefined,
+              " ",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            " ",
+            undefined,
+            ": ",
+            undefined,
+            " ",
+          ],
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": "NaN",
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              " ",
+              undefined,
+              ": ",
+              undefined,
+              " ",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            " ",
+            undefined,
+            ": ",
+            undefined,
+            " ",
+          ],
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": "NaN",
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              " ",
+              undefined,
+              ": ",
+              undefined,
+              " ",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            " ",
+            undefined,
+            ": ",
+            undefined,
+            " ",
+          ],
+          "type": "p",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

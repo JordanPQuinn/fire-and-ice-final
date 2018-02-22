@@ -9,11 +9,11 @@ export const getSwornMembers = async (members) => {
      return await fetchApi(member)
   })
   const resolvedPromises = await Promise.all(memberData)
-  const cleanedMembers = cleanData(resolvedPromises);
+  const cleanedMembers = cleanMemberData(resolvedPromises);
   return cleanedMembers;
 }
 
-export const cleanData = (members) => {
+export const cleanMemberData = (members) => {
   return members.map( ({name, died}) => {
     if(died === '') {
       died = 'Alive'
